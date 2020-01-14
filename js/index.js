@@ -33,7 +33,7 @@ document.querySelectorAll('h2').forEach(element => {
 });
 
 //#6 KeyDown All
-const island = document.querySelector('*')
+const island = document.querySelector('*');
 document.addEventListener('keydown', () => {
 island.style.color= 'blue';
 });
@@ -42,4 +42,10 @@ island.style.color= 'blue';
 const resize = document.querySelector('.intro img');
 funbus.addEventListener('wheel', () => {
   resize.style.transform = 'scale(2)';
- });
+});
+
+//#8 Keyup
+const keyUp = document.querySelector('*');
+document.addEventListener('keyup', () => {
+  keyUp.style.color= "red"; 
+})
