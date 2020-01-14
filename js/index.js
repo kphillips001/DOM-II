@@ -50,9 +50,16 @@ document.addEventListener('keyup', () => {
   keyUp.style.color= "red"; 
 })
 
- //#9 Mouseout
- document.querySelectorAll('h2').forEach(element => {
-  element.addEventListener('mouseout',() => {
-    element.style.transform= 'scale(2.5)';
+//#9 Mouseout
+document.querySelectorAll('h2').forEach(element => {
+ element.addEventListener('mouseout',() => {
+ element.style.transform= 'scale(2.5)';
   })
 });
+
+//#10 Mouse Enter
+const enter = document.querySelector('*');
+document.addEventListener('mouseenter', () => {
+  enter.style.color= "pink"; 
+})
+ 
