@@ -1,6 +1,6 @@
 // Your code goes here
 
-//#1 Mouseover a red
+//#1 Mouseover 'a' red
 document.querySelectorAll('a').forEach(element => {
   element.addEventListener('mouseover',() => {
     element.style.color= 'red';
@@ -14,7 +14,7 @@ document.querySelectorAll('h2').forEach(element => {
   })
 });
 
-//#3 Mouse Enter/Leave
+//#3 & #4 Mouse Enter/Leave
  const funbus = document.querySelector('.intro img');
 
  funbus.addEventListener('mouseenter', () => {
@@ -26,14 +26,20 @@ document.querySelectorAll('h2').forEach(element => {
    funbus.style.transition = 'transform 0.2s';
  });
 
- //#4 Click Footer
+//#5 Click Footer
  const footer = document.querySelector('footer');
  footer.addEventListener('click', () => {
   footer.style.backgroundColor = 'red';
 });
 
-//#5 KeyDown All
-const island = document.querySelector("*")
-document.addEventListener('keydown', ()  => {
-  island.style.color= "blue";
-})
+//#6 KeyDown All
+const island = document.querySelector('*')
+document.addEventListener('keydown', () => {
+island.style.color= 'blue';
+});
+ 
+//#7 Resize intro image (wheel)
+const resize = document.querySelector('.intro img');
+funbus.addEventListener('wheel', () => {
+  resize.style.transform = 'scale(2)';
+ });
