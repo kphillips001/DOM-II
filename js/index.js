@@ -25,9 +25,11 @@ document.querySelectorAll('h2').forEach(element => {
    funbus.style.transform = 'scale(1)';
    funbus.style.transition = 'transform 0.2s';
  });
-
- item.addEventListener('click', (event) => {
-  event.preventDefault();
+  const item = document.querySelectorAll('nav a')
+    item.forEach(item => {
+      item.addEventListener('click', (event) => {
+        event.preventDefault();
+    })
 });
 
 //#5 Click Footer
@@ -46,6 +48,7 @@ island.style.color= 'blue';
 const resize = document.querySelector('.intro img');
 funbus.addEventListener('wheel', () => {
   resize.style.transform = 'scale(2)';
+
 });
 
 //#8 Keyup
@@ -56,8 +59,8 @@ document.addEventListener('keyup', () => {
 
 //#9 Mouseout
 // const mouseOut = document.querySelector('h2'); 
-//   mouse.forEach('mouseout', (evt) =>{
-//   mouseOut.style.transform = 'scale(2.5)'; 
+//   mouse.forEach('mouseout', (e) =>{
+//   e.style.transform = 'scale(2.5)'; 
 //   })
 
 document.querySelectorAll('h2').forEach(element => {
@@ -68,8 +71,8 @@ document.querySelectorAll('h2').forEach(element => {
 
 //#10
 funBus.addEventListener('dblclick', (event) => {
-  funBus.style.paddingTop = "100px";
-  funBus.style.paddingBottom = "100px";
-  event.stopPropagation();
+  funBus.style.paddingTop = "500px";
+  funBus.style.paddingBottom = "500px";
+  //event.stopPropagation();
 });
  
