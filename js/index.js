@@ -55,6 +55,11 @@ document.addEventListener('keyup', () => {
 })
 
 //#9 Mouseout
+// const mouseOut = document.querySelector('h2'); 
+//   mouse.forEach('mouseout', (evt) =>{
+//   mouseOut.style.transform = 'scale(2.5)'; 
+//   })
+
 document.querySelectorAll('h2').forEach(element => {
  element.addEventListener('mouseout',() => {
  element.style.transform= 'scale(2.5)';
