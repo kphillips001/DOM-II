@@ -26,6 +26,10 @@ document.querySelectorAll('h2').forEach(element => {
    funbus.style.transition = 'transform 0.2s';
  });
 
+ item.addEventListener('click', (event) => {
+  event.preventDefault();
+});
+
 //#5 Click Footer
  const footer = document.querySelector('footer');
  footer.addEventListener('click', () => {
@@ -57,9 +61,10 @@ document.querySelectorAll('h2').forEach(element => {
   })
 });
 
-//#10 Mouse Enter
-const enter = document.querySelector('*');
-document.addEventListener('mouseenter', () => {
-  enter.style.color= "pink"; 
-})
+//#10
+funBus.addEventListener('dblclick', (event) => {
+  funBus.style.paddingTop = "100px";
+  funBus.style.paddingBottom = "100px";
+  event.stopPropagation();
+});
  
